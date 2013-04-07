@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="jquery.fade-replace.js"></script>
+  </head>
+  <body>
+    <div class="text">This is a sentence.</div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        setTimeout(doThing, 2000);
+        setTimeout(doThingTwo, 8000);
+      });
+      function doThing() {
+        $(".text").fadeReplace("This is a test of the fade in replace plugin.");
+      }
+      function doThingTwo() {
+        $(".text").fadeReplace("Lorem ipsum dolor sit amet.");
+      }
+    </script>
+  </body>
+</html>
